@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d435b5406245290e22d5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ImgVidTools",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ImgVidTools::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ImgVidTools-Debug-b087d80771c7d145a1d4.json",
+					"name" : "ImgVidTools",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ImgVidTools_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ImgVidTools_autogen-Debug-9060f95dbae4a49fcbd9.json",
+					"name" : "ImgVidTools_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ImgVidTools_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ImgVidTools_autogen_timestamp_deps-Debug-6e6a6d98aa2ee7968857.json",
+					"name" : "ImgVidTools_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug",
+		"source" : "C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
