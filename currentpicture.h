@@ -6,7 +6,7 @@
 #include <opencv2/highgui.hpp>
 
 enum class CurChangeType{
-    R, G, B, H, S, L
+    R, G, B, H, S, V, L
 };
 
 class CurrentPicture
@@ -24,13 +24,21 @@ public:
     void Change(QString filenane, QPixmap map);
 
     QString filename(){ return filename_;   }
-    QPixmap pixmap(){   return pixmap_; }
-    cv::Mat mat(){  return mat_;    }
+    cv::Mat& mat(){  return mat_;    }
+    QPixmap curmat2pixmap();
 
     void changeRGB(int val, int channel);
     void changeR(int val);
     void changeG(int val);
     void changeB(int val);
+
+    void changeHSV(int val, int channel);
+    void changeH(int val);
+    void changeS(int val);
+    void changeV(int val);
+    void changeL(int val);
+
+    bool OkPressed(CurChangeType type);
 
 };
 

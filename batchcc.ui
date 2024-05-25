@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1172</width>
-    <height>600</height>
+    <height>602</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -42,33 +42,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="layoutWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>510</y>
-      <width>281</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QPushButton" name="pushButton_3">
-       <property name="text">
-        <string>Previous Image</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_2">
-       <property name="text">
-        <string>Next Image</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="l_iname">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -81,12 +55,12 @@
      <string>Image Name</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="pb_save">
     <property name="geometry">
      <rect>
-      <x>890</x>
+      <x>860</x>
       <y>510</y>
-      <width>181</width>
+      <width>281</width>
       <height>29</height>
      </rect>
     </property>
@@ -114,9 +88,9 @@
     <property name="geometry">
      <rect>
       <x>890</x>
-      <y>60</y>
+      <y>50</y>
       <width>171</width>
-      <height>421</height>
+      <height>441</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -142,42 +116,28 @@
       </widget>
      </item>
      <item>
-      <widget class="QSlider" name="hue">
+      <widget class="QSlider" name="slid_h">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QSlider" name="lightness">
+      <widget class="QSlider" name="slid_s">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QSlider" name="contrast">
+      <widget class="QSlider" name="slid_v">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QSlider" name="brightness">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QSlider" name="contrast_2">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QSlider" name="brightness_2">
+      <widget class="QSlider" name="slid_l">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -244,20 +204,6 @@
        </property>
       </widget>
      </item>
-     <item>
-      <widget class="QLabel" name="label_10">
-       <property name="text">
-        <string>a</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_9">
-       <property name="text">
-        <string>b</string>
-       </property>
-      </widget>
-     </item>
     </layout>
    </widget>
    <widget class="QWidget" name="layoutWidget">
@@ -292,48 +238,47 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_9">
+      <widget class="QPushButton" name="pb_h">
        <property name="text">
         <string>Ok</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_8">
+      <widget class="QPushButton" name="pb_s">
        <property name="text">
         <string>Ok</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_7">
+      <widget class="QPushButton" name="pb_v">
        <property name="text">
         <string>Ok</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_12">
-       <property name="text">
-        <string>Ok</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_11">
-       <property name="text">
-        <string>Ok</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_10">
+      <widget class="QPushButton" name="pb_l">
        <property name="text">
         <string>Ok</string>
        </property>
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QPushButton" name="pb_reset">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>40</y>
+      <width>271</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

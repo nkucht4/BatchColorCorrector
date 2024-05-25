@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Masker</class>
+ <widget class="QMainWindow" name="Masker">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>437</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>701</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="pB_openfile">
+         <property name="text">
+          <string>Open File Explorer</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="l_filename">
+         <property name="text">
+          <string>No file chosen</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Choose desired format</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="pickFormat">
+       <item>
+        <property name="text">
+         <string>Choose here</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>mp4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>wmv</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>avi</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="pB_path">
+         <property name="text">
+          <string>Choose desired path</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="l_opath">
+         <property name="text">
+          <string>No path chosen</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pB_convert">
+       <property name="text">
+        <string>Mask!</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="progress">
+       <property name="text">
+        <string>In progress... Please, wait</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="l_error">
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: rgb(236, 96, 96);
+border-style: outset;
+border-width: 1 px;
+border-color: red
+</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

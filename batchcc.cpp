@@ -12,10 +12,24 @@ Batchcc::Batchcc(QWidget *parent)
 
     connect(ui->pB_addphotos, &QPushButton::pressed, this, &Batchcc::onOpenFile);
     connect(ui->t_photos, &QTableWidget::cellClicked, this, &Batchcc::onListItemClicked);
+    connect(ui->pb_save, &QPushButton::pressed, this, &Batchcc::onSaveFiles);
+    connect(ui->pb_reset, &QPushButton::pressed, this, &Batchcc::onReset);
 
     connect(ui->slid_r, &QSlider::sliderReleased, this, &Batchcc::onRValChanged);
     connect(ui->slid_g, &QSlider::sliderReleased, this, &Batchcc::onGValChanged);
     connect(ui->slid_b, &QSlider::sliderReleased, this, &Batchcc::onBValChanged);
+    connect(ui->slid_h, &QSlider::sliderReleased, this, &Batchcc::onHValChanged);
+    connect(ui->slid_s, &QSlider::sliderReleased, this, &Batchcc::onSValChanged);
+    connect(ui->slid_v, &QSlider::sliderReleased, this, &Batchcc::onVValChanged);
+    connect(ui->slid_l, &QSlider::sliderReleased, this, &Batchcc::onLValChanged);
+
+    connect(ui->pb_r, &QPushButton::pressed, this, &Batchcc::onOkR);
+    connect(ui->pb_g, &QPushButton::pressed, this, &Batchcc::onOkG);
+    connect(ui->pb_b, &QPushButton::pressed, this, &Batchcc::onOkB);
+    connect(ui->pb_h, &QPushButton::pressed, this, &Batchcc::onOkH);
+    connect(ui->pb_s, &QPushButton::pressed, this, &Batchcc::onOkS);
+    connect(ui->pb_v, &QPushButton::pressed, this, &Batchcc::onOkV);
+    connect(ui->pb_l, &QPushButton::pressed, this, &Batchcc::onOkL);
 }
 
 Batchcc::~Batchcc()
@@ -54,29 +68,212 @@ QString Batchcc::getRawFilename(QString path){
 }
 
 void Batchcc::onListItemClicked(int index, int col){
-    ui->ImgDisplay->setPixmap((QPixmap{filestr2pixmap(CC.filename_at(index))}).scaled({691,451}, Qt::KeepAspectRatio));
-    ui->ImgDisplay->setAlignment(Qt::AlignHCenter);
     displayed_pic.Change(CC.filename_at(index),ui->ImgDisplay->pixmap());
+    if (CC.orderVec().empty()){
+        ui->ImgDisplay->setPixmap((QPixmap{filestr2pixmap(CC.filename_at(index))}).scaled({691,451}, Qt::KeepAspectRatio));
+    }
+    else{
+        displayNewPhoto();
+    }
+    ui->l_iname->setText(getRawFilename(CC.filename_at(index)));
 }
 
 void Batchcc::centerticks(){
-    ui->slid_r->setRange(-50,50);
+    ui->ImgDisplay->setAlignment(Qt::AlignCenter);
+    ui->slid_r->setRange(-100,100);
     ui->slid_r->setValue(0);
-    ui->slid_g->setRange(-50,50);
+    ui->slid_g->setRange(-100,100);
     ui->slid_g->setValue(0);
-    ui->slid_b->setRange(-50,50);
+    ui->slid_b->setRange(-100,100);
     ui->slid_b->setValue(0);
+    ui->slid_h->setRange(-100,100);
+    ui->slid_h->setValue(0);
+    ui->slid_s->setRange(-150,150);
+    ui->slid_s->setValue(0);
+    ui->slid_v->setRange(-100,100);
+    ui->slid_v->setValue(0);
+    ui->slid_l->setRange(-100,100);
+    ui->slid_l->setValue(0);
 }
 
 void Batchcc::onRValChanged(){
-    std::cout<<"B"<<std::endl;
     displayed_pic.changeR(ui->slid_r->value());
+    updatePhoto();
 }
 
 void Batchcc::onBValChanged(){
-    displayed_pic.changeB(ui->slid_r->value());
+    displayed_pic.changeB(ui->slid_b->value());
+    updatePhoto();
 }
 
 void Batchcc::onGValChanged(){
-    displayed_pic.changeG(ui->slid_r->value());
+    displayed_pic.changeG(ui->slid_g->value());
+    updatePhoto();
+}
+
+void Batchcc::onHValChanged(){
+    displayed_pic.changeH(ui->slid_h->value());
+    updatePhoto();
+}
+
+void Batchcc::onSValChanged(){
+    displayed_pic.changeS(ui->slid_s->value());
+    updatePhoto();
+}
+
+void Batchcc::onVValChanged(){
+    displayed_pic.changeV(ui->slid_v->value());
+    updatePhoto();
+}
+
+void Batchcc::onLValChanged(){
+    displayed_pic.changeL(ui->slid_l->value());
+    updatePhoto();
+}
+
+void Batchcc::onOkR(){
+    if (displayed_pic.OkPressed(CurChangeType::R)){
+        CC.push_back_order(std::make_pair(CurChangeType::R, ui->slid_r->value()));
+        CC.props().r = ui->slid_r->value();
+    }
+}
+
+void Batchcc::onOkB(){
+    if (displayed_pic.OkPressed(CurChangeType::B)){
+        CC.push_back_order(std::make_pair(CurChangeType::B, ui->slid_b->value()));
+       CC.props().b = ui->slid_b->value();
+    }
+}
+
+void Batchcc::onOkG(){
+    if (displayed_pic.OkPressed(CurChangeType::G)){
+        CC.push_back_order(std::make_pair(CurChangeType::G, ui->slid_g->value()));
+        CC.props().g = ui->slid_g->value();
+    }
+}
+
+void Batchcc::onOkH(){
+    if (displayed_pic.OkPressed(CurChangeType::H)){
+        CC.push_back_order(std::make_pair(CurChangeType::H, ui->slid_h->value()));
+        CC.props().h = ui->slid_h->value();
+    }
+}
+
+void Batchcc::onOkS(){
+    if (displayed_pic.OkPressed(CurChangeType::S)){
+        CC.push_back_order(std::make_pair(CurChangeType::S, ui->slid_s->value()));
+        CC.props().s = ui->slid_s->value();
+    }
+}
+
+void Batchcc::onOkV(){
+    if (displayed_pic.OkPressed(CurChangeType::V)){
+        CC.push_back_order(std::make_pair(CurChangeType::V, ui->slid_v->value()));
+        CC.props().v = ui->slid_v->value();
+    }
+}
+
+void Batchcc::onOkL(){
+    if (displayed_pic.OkPressed(CurChangeType::L)){
+        CC.push_back_order(std::make_pair(CurChangeType::L, ui->slid_l->value()));
+        CC.props().l = ui->slid_l->value();
+    }
+}
+
+void Batchcc::updatePhoto(){
+    ui->ImgDisplay->setPixmap(displayed_pic.curmat2pixmap().scaled({691,451}, Qt::KeepAspectRatio));
+}
+
+void Batchcc::displayNewPhoto(){
+   for (auto state : CC.orderVec()){
+        switch (state.first){
+        case CurChangeType::R:
+            displayed_pic.changeR(CC.props().r);
+            displayed_pic.OkPressed(CurChangeType::R);
+            break;
+        case CurChangeType::B:
+            displayed_pic.changeB(CC.props().b);
+            displayed_pic.OkPressed(CurChangeType::B);
+            break;
+        case CurChangeType::G:
+            displayed_pic.changeG(CC.props().g);
+            displayed_pic.OkPressed(CurChangeType::G);
+            break;
+        case CurChangeType::H:
+            displayed_pic.changeH(CC.props().h);
+            displayed_pic.OkPressed(CurChangeType::H);
+            break;
+        case CurChangeType::S:
+            displayed_pic.changeS(CC.props().s);
+            displayed_pic.OkPressed(CurChangeType::S);
+            break;
+        case CurChangeType::V:
+            displayed_pic.changeV(CC.props().v);
+            displayed_pic.OkPressed(CurChangeType::V);
+            break;
+        case CurChangeType::L:
+            displayed_pic.changeV(CC.props().l);
+            displayed_pic.OkPressed(CurChangeType::L);
+            break;
+        }
+    }
+   updatePhoto();
+}
+
+void Batchcc::onSaveFiles(){
+    QString opath {getOutputPath()};
+    for (auto img : CC.img_vec()){
+        SaveImgWithChanges(img, opath);
+    }
+    return;
+}
+
+QString Batchcc::getOutputPath(){
+    return QFileDialog::getExistingDirectory(this, tr("Choose the output directory"), "C:\\");
+}
+
+void Batchcc::SaveImgWithChanges(ImgNode image, QString out_path){
+    CurrentPicture processed_picture{image.filename(), filestr2pixmap(image.filename())};
+    for (auto state : CC.orderVec()){
+        switch (state.first){
+        case CurChangeType::R:
+            processed_picture.changeR(CC.props().r);
+            processed_picture.OkPressed(CurChangeType::R);
+            break;
+        case CurChangeType::B:
+            processed_picture.changeB(CC.props().b);
+            processed_picture.OkPressed(CurChangeType::B);
+            break;
+        case CurChangeType::G:
+            processed_picture.changeG(CC.props().g);
+            processed_picture.OkPressed(CurChangeType::G);
+            break;
+        case CurChangeType::H:
+            processed_picture.changeH(CC.props().h);
+            processed_picture.OkPressed(CurChangeType::H);
+            break;
+        case CurChangeType::S:
+            processed_picture.changeS(CC.props().s);
+            processed_picture.OkPressed(CurChangeType::S);
+            break;
+        case CurChangeType::V:
+            processed_picture.changeV(CC.props().v);
+            processed_picture.OkPressed(CurChangeType::V);
+            break;
+        case CurChangeType::L:
+            processed_picture.changeV(CC.props().l);
+            processed_picture.OkPressed(CurChangeType::L);
+            break;
+        }
+    }
+    out_path = out_path + '/' + getRawFilename(image.filename());
+    std::cout << out_path.toStdString() << std::endl;
+    cv::imwrite(out_path.toStdString(), processed_picture.mat());
+}
+
+void Batchcc::onReset(){
+    CC.clearOrder();
+    displayed_pic.Change(displayed_pic.filename(), filestr2pixmap(displayed_pic.filename()));
+    centerticks();
+    ui->ImgDisplay->setPixmap((QPixmap{filestr2pixmap(displayed_pic.filename())}).scaled({691,451}, Qt::KeepAspectRatio));
 }

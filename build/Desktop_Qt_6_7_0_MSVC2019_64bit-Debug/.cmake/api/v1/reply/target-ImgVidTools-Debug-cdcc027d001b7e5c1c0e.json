@@ -76,13 +76,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 77,
+				"line" : 79,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 60,
+				"line" : 62,
 				"parent" : 0
 			},
 			{
@@ -386,7 +386,9 @@
 				9,
 				13,
 				15,
-				17
+				17,
+				19,
+				21
 			]
 		}
 	],
@@ -589,7 +591,9 @@
 				9,
 				13,
 				15,
-				17
+				17,
+				19,
+				21
 			]
 		},
 		{
@@ -604,8 +608,11 @@
 				14,
 				16,
 				18,
-				19,
-				20
+				20,
+				23,
+				24,
+				25,
+				26
 			]
 		},
 		{
@@ -615,14 +622,15 @@
 				4,
 				8,
 				11,
-				21
+				22,
+				27
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				22
+				28
 			]
 		}
 	],
@@ -728,6 +736,33 @@
 			"sourceGroupIndex" : 0
 		},
 		{
+			"backtrace" : 4,
+			"path" : "currentpicture.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "currentpicture.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "masker.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "masker.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "masker.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/ImgVidTools_autogen/include/ui_menu.h",
@@ -743,6 +778,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/ImgVidTools_autogen/include/ui_batchcc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/ImgVidTools_autogen/include/ui_masker.h",
 			"sourceGroupIndex" : 1
 		},
 		{

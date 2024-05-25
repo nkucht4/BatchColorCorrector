@@ -22,6 +22,10 @@ public:
     QString getRawFilename(QString path);
     QPixmap filestr2pixmap(QString file);
     void centerticks();
+    void updatePhoto();
+    void displayNewPhoto();
+    QString getOutputPath();
+    void SaveImgWithChanges(ImgNode img, QString out_path);
 
 public slots:
     void onOpenFile();
@@ -29,6 +33,21 @@ public slots:
     void onRValChanged();
     void onBValChanged();
     void onGValChanged();
+    void onHValChanged();
+    void onSValChanged();
+    void onVValChanged();
+    void onLValChanged();
+
+    void onOkR();
+    void onOkG();
+    void onOkB();
+    void onOkH();
+    void onOkS();
+    void onOkV();
+    void onOkL();
+
+    void onSaveFiles();
+    void onReset();
 
 private:
     Ui::Batchcc *ui;

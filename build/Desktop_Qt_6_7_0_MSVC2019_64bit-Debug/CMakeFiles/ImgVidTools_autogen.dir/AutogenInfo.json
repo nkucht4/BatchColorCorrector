@@ -307,6 +307,12 @@
 			null
 		],
 		[
+			"C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/masker.h",
+			"MU",
+			"EWIEGA46WW/moc_masker.cpp",
+			null
+		],
+		[
 			"C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/menu.h",
 			"MU",
 			"EWIEGA46WW/moc_menu.cpp",
@@ -408,6 +414,11 @@
 		],
 		[
 			"C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/masker.cpp",
 			"MU",
 			null
 		],

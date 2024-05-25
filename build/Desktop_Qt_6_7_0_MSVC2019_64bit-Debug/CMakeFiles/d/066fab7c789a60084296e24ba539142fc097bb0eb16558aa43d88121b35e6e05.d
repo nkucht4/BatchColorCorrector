@@ -352,6 +352,9 @@ ImgVidTools_autogen/timestamp: \
   C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/mainwindow.cpp \
   C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/mainwindow.h \
   C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/mainwindow.ui \
+  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/masker.cpp \
+  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/masker.h \
+  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/masker.ui \
   C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/menu.cpp \
   C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/menu.h \
   C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/menu.ui \
