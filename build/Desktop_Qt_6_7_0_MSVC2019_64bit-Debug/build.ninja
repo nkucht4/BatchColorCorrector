@@ -67,33 +67,6 @@ build CMakeFiles\ImgVidTools.dir\main.cpp.obj: CXX_COMPILER__ImgVidTools_unscann
   TARGET_COMPILE_PDB = CMakeFiles\ImgVidTools.dir\
   TARGET_PDB = ImgVidTools.pdb
 
-build CMakeFiles\ImgVidTools.dir\menu.cpp.obj: CXX_COMPILER__ImgVidTools_unscanned_Debug C$:\Users\kucht\Documents\Programowanie\Studia\QT\ImgVidTools\menu.cpp || cmake_object_order_depends_target_ImgVidTools
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  FLAGS = -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -Zc:__cplusplus -permissive- -utf-8
-  INCLUDES = -IC:\Users\kucht\Documents\Programowanie\Studia\QT\ImgVidTools\build\Desktop_Qt_6_7_0_MSVC2019_64bit-Debug\ImgVidTools_autogen\include -external:IC:\opencv\build\include -external:IC:\Qt\6.7.0\msvc2019_64\include\QtCore -external:IC:\Qt\6.7.0\msvc2019_64\include -external:IC:\Qt\6.7.0\msvc2019_64\mkspecs\win32-msvc -external:IC:\Qt\6.7.0\msvc2019_64\include\QtWidgets -external:IC:\Qt\6.7.0\msvc2019_64\include\QtGui -external:W0
-  OBJECT_DIR = CMakeFiles\ImgVidTools.dir
-  OBJECT_FILE_DIR = CMakeFiles\ImgVidTools.dir
-  TARGET_COMPILE_PDB = CMakeFiles\ImgVidTools.dir\
-  TARGET_PDB = ImgVidTools.pdb
-
-build CMakeFiles\ImgVidTools.dir\mainwindow.cpp.obj: CXX_COMPILER__ImgVidTools_unscanned_Debug C$:\Users\kucht\Documents\Programowanie\Studia\QT\ImgVidTools\mainwindow.cpp || cmake_object_order_depends_target_ImgVidTools
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  FLAGS = -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -Zc:__cplusplus -permissive- -utf-8
-  INCLUDES = -IC:\Users\kucht\Documents\Programowanie\Studia\QT\ImgVidTools\build\Desktop_Qt_6_7_0_MSVC2019_64bit-Debug\ImgVidTools_autogen\include -external:IC:\opencv\build\include -external:IC:\Qt\6.7.0\msvc2019_64\include\QtCore -external:IC:\Qt\6.7.0\msvc2019_64\include -external:IC:\Qt\6.7.0\msvc2019_64\mkspecs\win32-msvc -external:IC:\Qt\6.7.0\msvc2019_64\include\QtWidgets -external:IC:\Qt\6.7.0\msvc2019_64\include\QtGui -external:W0
-  OBJECT_DIR = CMakeFiles\ImgVidTools.dir
-  OBJECT_FILE_DIR = CMakeFiles\ImgVidTools.dir
-  TARGET_COMPILE_PDB = CMakeFiles\ImgVidTools.dir\
-  TARGET_PDB = ImgVidTools.pdb
-
-build CMakeFiles\ImgVidTools.dir\ovideo.cpp.obj: CXX_COMPILER__ImgVidTools_unscanned_Debug C$:\Users\kucht\Documents\Programowanie\Studia\QT\ImgVidTools\ovideo.cpp || cmake_object_order_depends_target_ImgVidTools
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  FLAGS = -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -Zc:__cplusplus -permissive- -utf-8
-  INCLUDES = -IC:\Users\kucht\Documents\Programowanie\Studia\QT\ImgVidTools\build\Desktop_Qt_6_7_0_MSVC2019_64bit-Debug\ImgVidTools_autogen\include -external:IC:\opencv\build\include -external:IC:\Qt\6.7.0\msvc2019_64\include\QtCore -external:IC:\Qt\6.7.0\msvc2019_64\include -external:IC:\Qt\6.7.0\msvc2019_64\mkspecs\win32-msvc -external:IC:\Qt\6.7.0\msvc2019_64\include\QtWidgets -external:IC:\Qt\6.7.0\msvc2019_64\include\QtGui -external:W0
-  OBJECT_DIR = CMakeFiles\ImgVidTools.dir
-  OBJECT_FILE_DIR = CMakeFiles\ImgVidTools.dir
-  TARGET_COMPILE_PDB = CMakeFiles\ImgVidTools.dir\
-  TARGET_PDB = ImgVidTools.pdb
-
 build CMakeFiles\ImgVidTools.dir\batchcc.cpp.obj: CXX_COMPILER__ImgVidTools_unscanned_Debug C$:\Users\kucht\Documents\Programowanie\Studia\QT\ImgVidTools\batchcc.cpp || cmake_object_order_depends_target_ImgVidTools
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -Zc:__cplusplus -permissive- -utf-8
@@ -130,15 +103,6 @@ build CMakeFiles\ImgVidTools.dir\currentpicture.cpp.obj: CXX_COMPILER__ImgVidToo
   TARGET_COMPILE_PDB = CMakeFiles\ImgVidTools.dir\
   TARGET_PDB = ImgVidTools.pdb
 
-build CMakeFiles\ImgVidTools.dir\masker.cpp.obj: CXX_COMPILER__ImgVidTools_unscanned_Debug C$:\Users\kucht\Documents\Programowanie\Studia\QT\ImgVidTools\masker.cpp || cmake_object_order_depends_target_ImgVidTools
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  FLAGS = -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -Zc:__cplusplus -permissive- -utf-8
-  INCLUDES = -IC:\Users\kucht\Documents\Programowanie\Studia\QT\ImgVidTools\build\Desktop_Qt_6_7_0_MSVC2019_64bit-Debug\ImgVidTools_autogen\include -external:IC:\opencv\build\include -external:IC:\Qt\6.7.0\msvc2019_64\include\QtCore -external:IC:\Qt\6.7.0\msvc2019_64\include -external:IC:\Qt\6.7.0\msvc2019_64\mkspecs\win32-msvc -external:IC:\Qt\6.7.0\msvc2019_64\include\QtWidgets -external:IC:\Qt\6.7.0\msvc2019_64\include\QtGui -external:W0
-  OBJECT_DIR = CMakeFiles\ImgVidTools.dir
-  OBJECT_FILE_DIR = CMakeFiles\ImgVidTools.dir
-  TARGET_COMPILE_PDB = CMakeFiles\ImgVidTools.dir\
-  TARGET_PDB = ImgVidTools.pdb
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ImgVidTools
@@ -147,7 +111,7 @@ build CMakeFiles\ImgVidTools.dir\masker.cpp.obj: CXX_COMPILER__ImgVidTools_unsca
 #############################################
 # Link the executable ImgVidTools.exe
 
-build ImgVidTools.exe: CXX_EXECUTABLE_LINKER__ImgVidTools_Debug CMakeFiles\ImgVidTools.dir\ImgVidTools_autogen\mocs_compilation.cpp.obj CMakeFiles\ImgVidTools.dir\main.cpp.obj CMakeFiles\ImgVidTools.dir\menu.cpp.obj CMakeFiles\ImgVidTools.dir\mainwindow.cpp.obj CMakeFiles\ImgVidTools.dir\ovideo.cpp.obj CMakeFiles\ImgVidTools.dir\batchcc.cpp.obj CMakeFiles\ImgVidTools.dir\colorcorrector.cpp.obj CMakeFiles\ImgVidTools.dir\imgnode.cpp.obj CMakeFiles\ImgVidTools.dir\currentpicture.cpp.obj CMakeFiles\ImgVidTools.dir\masker.cpp.obj | C$:\Qt\6.7.0\msvc2019_64\lib\Qt6Widgetsd.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\Qt\6.7.0\msvc2019_64\lib\Qt6Guid.lib C$:\Qt\6.7.0\msvc2019_64\lib\Qt6Cored.lib C$:\Qt\6.7.0\msvc2019_64\lib\Qt6EntryPointd.lib || ImgVidTools_autogen ImgVidTools_autogen_timestamp_deps
+build ImgVidTools.exe: CXX_EXECUTABLE_LINKER__ImgVidTools_Debug CMakeFiles\ImgVidTools.dir\ImgVidTools_autogen\mocs_compilation.cpp.obj CMakeFiles\ImgVidTools.dir\main.cpp.obj CMakeFiles\ImgVidTools.dir\batchcc.cpp.obj CMakeFiles\ImgVidTools.dir\colorcorrector.cpp.obj CMakeFiles\ImgVidTools.dir\imgnode.cpp.obj CMakeFiles\ImgVidTools.dir\currentpicture.cpp.obj | C$:\Qt\6.7.0\msvc2019_64\lib\Qt6Widgetsd.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\Qt\6.7.0\msvc2019_64\lib\Qt6Guid.lib C$:\Qt\6.7.0\msvc2019_64\lib\Qt6Cored.lib C$:\Qt\6.7.0\msvc2019_64\lib\Qt6EntryPointd.lib || ImgVidTools_autogen ImgVidTools_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:windows
   LINK_LIBRARIES = C:\Qt\6.7.0\msvc2019_64\lib\Qt6Widgetsd.lib  C:\opencv\build\x64\vc16\lib\opencv_world490d.lib  C:\opencv\build\x64\vc16\lib\opencv_world490d.lib  C:\opencv\build\x64\vc16\lib\opencv_world490d.lib  C:\opencv\build\x64\vc16\lib\opencv_world490d.lib  C:\opencv\build\x64\vc16\lib\opencv_world490d.lib  C:\opencv\build\x64\vc16\lib\opencv_world490d.lib  C:\opencv\build\x64\vc16\lib\opencv_world490d.lib  C:\opencv\build\x64\vc16\lib\opencv_world490d.lib  C:\opencv\build\x64\vc16\lib\opencv_world490d.lib  C:\opencv\build\x64\vc16\lib\opencv_world490d.lib  C:\opencv\build\x64\vc16\lib\opencv_world490d.lib  C:\opencv\build\x64\vc16\lib\opencv_world490d.lib  C:\opencv\build\x64\vc16\lib\opencv_world490d.lib  C:\opencv\build\x64\vc16\lib\opencv_world490d.lib  C:\opencv\build\x64\vc16\lib\opencv_world490d.lib  C:\opencv\build\x64\vc16\lib\opencv_world490d.lib  C:\Qt\6.7.0\msvc2019_64\lib\Qt6Guid.lib  C:\Qt\6.7.0\msvc2019_64\lib\Qt6Cored.lib  mpr.lib  userenv.lib  C:\Qt\6.7.0\msvc2019_64\lib\Qt6EntryPointd.lib  shell32.lib  d3d11.lib  dxgi.lib  dxguid.lib  d3d12.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
@@ -223,7 +187,7 @@ build ImgVidTools_autogen_timestamp_deps: phony CMakeFiles\ImgVidTools_autogen_t
 #############################################
 # Utility command for ImgVidTools_autogen
 
-build ImgVidTools_autogen: phony CMakeFiles\ImgVidTools_autogen ImgVidTools_autogen\include\ui_menu.h ImgVidTools_autogen\include\ui_mainwindow.h ImgVidTools_autogen\include\ui_batchcc.h ImgVidTools_autogen\include\ui_masker.h ImgVidTools_autogen\timestamp ImgVidTools_autogen\mocs_compilation.cpp ImgVidTools_autogen_timestamp_deps
+build ImgVidTools_autogen: phony CMakeFiles\ImgVidTools_autogen ImgVidTools_autogen\include\ui_batchcc.h ImgVidTools_autogen\timestamp ImgVidTools_autogen\mocs_compilation.cpp ImgVidTools_autogen_timestamp_deps
 
 
 #############################################
@@ -239,13 +203,13 @@ build ImgVidTools_autogen\timestamp ImgVidTools_autogen\mocs_compilation.cpp | $
 #############################################
 # Phony custom command for CMakeFiles\ImgVidTools_autogen_timestamp_deps
 
-build CMakeFiles\ImgVidTools_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\ImgVidTools_autogen_timestamp_deps: phony C$:\Qt\6.7.0\msvc2019_64\lib\Qt6Cored.lib C$:\Qt\6.7.0\msvc2019_64\.\bin\uic.exe C$:\Qt\6.7.0\msvc2019_64\.\bin\moc.exe C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\Qt\6.7.0\msvc2019_64\lib\Qt6Widgetsd.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib
+build CMakeFiles\ImgVidTools_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\ImgVidTools_autogen_timestamp_deps: phony C$:\Qt\6.7.0\msvc2019_64\lib\Qt6Cored.lib C$:\Qt\6.7.0\msvc2019_64\.\bin\uic.exe C$:\Qt\6.7.0\msvc2019_64\.\bin\moc.exe C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\Qt\6.7.0\msvc2019_64\lib\Qt6Widgetsd.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib C$:\opencv\build\x64\vc16\lib\opencv_world490d.lib
 
 
 #############################################
 # Phony custom command for CMakeFiles\ImgVidTools_autogen
 
-build CMakeFiles\ImgVidTools_autogen ImgVidTools_autogen\include\ui_menu.h ImgVidTools_autogen\include\ui_mainwindow.h ImgVidTools_autogen\include\ui_batchcc.h ImgVidTools_autogen\include\ui_masker.h | ${cmake_ninja_workdir}CMakeFiles\ImgVidTools_autogen ${cmake_ninja_workdir}ImgVidTools_autogen\include\ui_menu.h ${cmake_ninja_workdir}ImgVidTools_autogen\include\ui_mainwindow.h ${cmake_ninja_workdir}ImgVidTools_autogen\include\ui_batchcc.h ${cmake_ninja_workdir}ImgVidTools_autogen\include\ui_masker.h: phony ImgVidTools_autogen\timestamp || ImgVidTools_autogen_timestamp_deps
+build CMakeFiles\ImgVidTools_autogen ImgVidTools_autogen\include\ui_batchcc.h | ${cmake_ninja_workdir}CMakeFiles\ImgVidTools_autogen ${cmake_ninja_workdir}ImgVidTools_autogen\include\ui_batchcc.h: phony ImgVidTools_autogen\timestamp || ImgVidTools_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

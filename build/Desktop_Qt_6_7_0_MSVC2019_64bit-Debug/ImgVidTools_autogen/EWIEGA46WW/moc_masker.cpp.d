@@ -149,4 +149,32 @@ C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/build/Desktop_Qt_6_
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h \
-  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/ovideo.h
+  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/ovideo.h \
+  C:/opencv/build/include/opencv2/core.hpp \
+  C:/opencv/build/include/opencv2/core/base.hpp \
+  C:/opencv/build/include/opencv2/core/bufferpool.hpp \
+  C:/opencv/build/include/opencv2/core/check.hpp \
+  C:/opencv/build/include/opencv2/core/cv_cpu_dispatch.h \
+  C:/opencv/build/include/opencv2/core/cvdef.h \
+  C:/opencv/build/include/opencv2/core/cvstd.hpp \
+  C:/opencv/build/include/opencv2/core/cvstd.inl.hpp \
+  C:/opencv/build/include/opencv2/core/cvstd_wrapper.hpp \
+  C:/opencv/build/include/opencv2/core/fast_math.hpp \
+  C:/opencv/build/include/opencv2/core/hal/interface.h \
+  C:/opencv/build/include/opencv2/core/mat.hpp \
+  C:/opencv/build/include/opencv2/core/mat.inl.hpp \
+  C:/opencv/build/include/opencv2/core/matx.hpp \
+  C:/opencv/build/include/opencv2/core/neon_utils.hpp \
+  C:/opencv/build/include/opencv2/core/operations.hpp \
+  C:/opencv/build/include/opencv2/core/optim.hpp \
+  C:/opencv/build/include/opencv2/core/ovx.hpp \
+  C:/opencv/build/include/opencv2/core/persistence.hpp \
+  C:/opencv/build/include/opencv2/core/saturate.hpp \
+  C:/opencv/build/include/opencv2/core/traits.hpp \
+  C:/opencv/build/include/opencv2/core/types.hpp \
+  C:/opencv/build/include/opencv2/core/utility.hpp \
+  C:/opencv/build/include/opencv2/core/version.hpp \
+  C:/opencv/build/include/opencv2/core/vsx_utils.hpp \
+  C:/opencv/build/include/opencv2/opencv_modules.hpp \
+  C:/opencv/build/include/opencv2/video/background_segm.hpp \
+  C:/opencv/build/include/opencv2/videoio.hpp

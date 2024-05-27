@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-d435b5406245290e22d5.json",
+					"jsonFile" : "directory-.-Debug-d0ca8bf8e464c3fbb3a2.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ImgVidTools::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ImgVidTools-Debug-b087d80771c7d145a1d4.json",
+					"jsonFile" : "target-ImgVidTools-Debug-633d491a21150213ea3c.json",
 					"name" : "ImgVidTools",
 					"projectIndex" : 0
 				},

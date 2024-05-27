@@ -349,18 +349,6 @@ ImgVidTools_autogen/timestamp: \
   C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/imgnode.cpp \
   C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/imgnode.h \
   C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/main.cpp \
-  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/mainwindow.cpp \
-  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/mainwindow.h \
-  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/mainwindow.ui \
-  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/masker.cpp \
-  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/masker.h \
-  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/masker.ui \
-  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/menu.cpp \
-  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/menu.h \
-  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/menu.ui \
-  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/ovideo.cpp \
-  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/ovideo.h \
-  C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/settings.h \
   C:/opencv/build/include/opencv2/core.hpp \
   C:/opencv/build/include/opencv2/core/base.hpp \
   C:/opencv/build/include/opencv2/core/bufferpool.hpp \

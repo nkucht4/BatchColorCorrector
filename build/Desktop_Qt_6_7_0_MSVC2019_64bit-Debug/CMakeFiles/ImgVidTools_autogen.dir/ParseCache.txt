@@ -157,6 +157,7 @@ C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/ovideo.cpp
 C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/colorcorrector.cpp
 C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/menu.h
  mmc:Q_OBJECT
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/QString
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20functional.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20memory.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20type_traits.h
@@ -274,6 +275,7 @@ C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/menu.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qversiontagging.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qxptype_traits.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtCore/qyieldcpu.h
+ mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/QPixmap
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qaction.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qbitmap.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtGui/qbrush.h
@@ -307,7 +309,44 @@ C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/menu.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsexports.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h
+ mdp:C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/batchcc.h
+ mdp:C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/colorcorrector.h
+ mdp:C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/currentpicture.h
+ mdp:C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/imgnode.h
+ mdp:C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/mainwindow.h
+ mdp:C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/masker.h
  mdp:C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/menu.h
+ mdp:C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/ovideo.h
+ mdp:C:/opencv/build/include/opencv2/core.hpp
+ mdp:C:/opencv/build/include/opencv2/core/base.hpp
+ mdp:C:/opencv/build/include/opencv2/core/bufferpool.hpp
+ mdp:C:/opencv/build/include/opencv2/core/check.hpp
+ mdp:C:/opencv/build/include/opencv2/core/cv_cpu_dispatch.h
+ mdp:C:/opencv/build/include/opencv2/core/cvdef.h
+ mdp:C:/opencv/build/include/opencv2/core/cvstd.hpp
+ mdp:C:/opencv/build/include/opencv2/core/cvstd.inl.hpp
+ mdp:C:/opencv/build/include/opencv2/core/cvstd_wrapper.hpp
+ mdp:C:/opencv/build/include/opencv2/core/fast_math.hpp
+ mdp:C:/opencv/build/include/opencv2/core/hal/interface.h
+ mdp:C:/opencv/build/include/opencv2/core/mat.hpp
+ mdp:C:/opencv/build/include/opencv2/core/mat.inl.hpp
+ mdp:C:/opencv/build/include/opencv2/core/matx.hpp
+ mdp:C:/opencv/build/include/opencv2/core/neon_utils.hpp
+ mdp:C:/opencv/build/include/opencv2/core/operations.hpp
+ mdp:C:/opencv/build/include/opencv2/core/optim.hpp
+ mdp:C:/opencv/build/include/opencv2/core/ovx.hpp
+ mdp:C:/opencv/build/include/opencv2/core/persistence.hpp
+ mdp:C:/opencv/build/include/opencv2/core/saturate.hpp
+ mdp:C:/opencv/build/include/opencv2/core/traits.hpp
+ mdp:C:/opencv/build/include/opencv2/core/types.hpp
+ mdp:C:/opencv/build/include/opencv2/core/utility.hpp
+ mdp:C:/opencv/build/include/opencv2/core/version.hpp
+ mdp:C:/opencv/build/include/opencv2/core/vsx_utils.hpp
+ mdp:C:/opencv/build/include/opencv2/highgui.hpp
+ mdp:C:/opencv/build/include/opencv2/imgcodecs.hpp
+ mdp:C:/opencv/build/include/opencv2/opencv_modules.hpp
+ mdp:C:/opencv/build/include/opencv2/video/background_segm.hpp
+ mdp:C:/opencv/build/include/opencv2/videoio.hpp
 C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/ovideo.h
 C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/main.cpp
 C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/mainwindow.cpp
@@ -665,3 +704,31 @@ C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/masker.h
  mdp:C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h
  mdp:C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/masker.h
  mdp:C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/ovideo.h
+ mdp:C:/opencv/build/include/opencv2/core.hpp
+ mdp:C:/opencv/build/include/opencv2/core/base.hpp
+ mdp:C:/opencv/build/include/opencv2/core/bufferpool.hpp
+ mdp:C:/opencv/build/include/opencv2/core/check.hpp
+ mdp:C:/opencv/build/include/opencv2/core/cv_cpu_dispatch.h
+ mdp:C:/opencv/build/include/opencv2/core/cvdef.h
+ mdp:C:/opencv/build/include/opencv2/core/cvstd.hpp
+ mdp:C:/opencv/build/include/opencv2/core/cvstd.inl.hpp
+ mdp:C:/opencv/build/include/opencv2/core/cvstd_wrapper.hpp
+ mdp:C:/opencv/build/include/opencv2/core/fast_math.hpp
+ mdp:C:/opencv/build/include/opencv2/core/hal/interface.h
+ mdp:C:/opencv/build/include/opencv2/core/mat.hpp
+ mdp:C:/opencv/build/include/opencv2/core/mat.inl.hpp
+ mdp:C:/opencv/build/include/opencv2/core/matx.hpp
+ mdp:C:/opencv/build/include/opencv2/core/neon_utils.hpp
+ mdp:C:/opencv/build/include/opencv2/core/operations.hpp
+ mdp:C:/opencv/build/include/opencv2/core/optim.hpp
+ mdp:C:/opencv/build/include/opencv2/core/ovx.hpp
+ mdp:C:/opencv/build/include/opencv2/core/persistence.hpp
+ mdp:C:/opencv/build/include/opencv2/core/saturate.hpp
+ mdp:C:/opencv/build/include/opencv2/core/traits.hpp
+ mdp:C:/opencv/build/include/opencv2/core/types.hpp
+ mdp:C:/opencv/build/include/opencv2/core/utility.hpp
+ mdp:C:/opencv/build/include/opencv2/core/version.hpp
+ mdp:C:/opencv/build/include/opencv2/core/vsx_utils.hpp
+ mdp:C:/opencv/build/include/opencv2/opencv_modules.hpp
+ mdp:C:/opencv/build/include/opencv2/video/background_segm.hpp
+ mdp:C:/opencv/build/include/opencv2/videoio.hpp

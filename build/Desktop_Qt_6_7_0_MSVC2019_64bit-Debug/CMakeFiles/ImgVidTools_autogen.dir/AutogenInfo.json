@@ -299,36 +299,6 @@
 			"MU",
 			"EWIEGA46WW/moc_imgnode.cpp",
 			null
-		],
-		[
-			"C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/mainwindow.h",
-			"MU",
-			"EWIEGA46WW/moc_mainwindow.cpp",
-			null
-		],
-		[
-			"C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/masker.h",
-			"MU",
-			"EWIEGA46WW/moc_masker.cpp",
-			null
-		],
-		[
-			"C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/menu.h",
-			"MU",
-			"EWIEGA46WW/moc_menu.cpp",
-			null
-		],
-		[
-			"C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/ovideo.h",
-			"MU",
-			"EWIEGA46WW/moc_ovideo.cpp",
-			null
-		],
-		[
-			"C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/settings.h",
-			"MU",
-			"EWIEGA46WW/moc_settings.cpp",
-			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -409,26 +379,6 @@
 		],
 		[
 			"C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/main.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/mainwindow.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/masker.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/menu.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/kucht/Documents/Programowanie/Studia/QT/ImgVidTools/ovideo.cpp",
 			"MU",
 			null
 		]

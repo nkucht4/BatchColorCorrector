@@ -16,16 +16,6 @@ include_directories( ${OpenCV_INCLUDE_DIRS})
 
 set(PROJECT_SOURCES
         main.cpp
-        menu.cpp
-        menu.h
-        menu.ui
-        settings.h
-        settings
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
-        ovideo.cpp
-        ovideo.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -39,7 +29,6 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         colorcorrector.h colorcorrector.cpp
         imgnode.h imgnode.cpp
         currentpicture.h currentpicture.cpp
-        masker.h masker.cpp masker.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET ImgVidTools APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

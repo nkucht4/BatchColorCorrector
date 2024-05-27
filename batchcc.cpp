@@ -267,7 +267,6 @@ void Batchcc::SaveImgWithChanges(ImgNode image, QString out_path){
         }
     }
     out_path = out_path + '/' + getRawFilename(image.filename());
-    std::cout << out_path.toStdString() << std::endl;
     cv::imwrite(out_path.toStdString(), processed_picture.mat());
 }
 
