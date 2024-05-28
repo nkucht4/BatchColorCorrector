@@ -16,6 +16,12 @@ void CurrentPicture::Change(QString filename, QPixmap map){
     mat_ = imread(filename_.toStdString(), IMREAD_COLOR);
 }
 
+void CurrentPicture::Change(int a){
+    filename_ = "0";
+    mat_.setTo(cv::Scalar(250,250,250));
+    mat_ = imread("C:/Users/kucht/Documents/Programowanie/Studia/QT/Batch Color Corrector/img/black.png", IMREAD_COLOR);
+}
+
 void CurrentPicture::changeRGB(int val, int channel){
     Mat bgr[3];
     split(mat_, bgr);

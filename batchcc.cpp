@@ -8,6 +8,7 @@ Batchcc::Batchcc(QWidget *parent)
 {
     ui->setupUi(this);
     centerticks();
+    PrepareEmpty();
 
     connect(ui->pB_addphotos, &QPushButton::pressed, this, &Batchcc::onOpenFile);
     connect(ui->t_photos, &QTableWidget::cellClicked, this, &Batchcc::onListItemClicked);
@@ -15,6 +16,7 @@ Batchcc::Batchcc(QWidget *parent)
     connect(ui->pb_reset, &QPushButton::pressed, this, &Batchcc::onReset);
     connect(ui->pB_prev, &QPushButton::pressed, this, &Batchcc::onPrev);
     connect(ui->pB_next, &QPushButton::pressed, this, &Batchcc::onNext);
+    connect(ui->pb_delete, &QPushButton::pressed, this, &Batchcc::onDelete);
 
     connect(ui->slid_r, &QSlider::sliderReleased, this, &Batchcc::onRValChanged);
     connect(ui->slid_g, &QSlider::sliderReleased, this, &Batchcc::onGValChanged);
@@ -40,6 +42,9 @@ Batchcc::~Batchcc()
 
 void Batchcc::onOpenFile(){
     QStringList filenames = QFileDialog::getOpenFileNames(this, tr("Pick image(s) to edit"), "C:\\", tr("Images (*.png *.xpm *.jpg)"));
+    if (filenames.isEmpty()){
+        return;
+    }
     int i = ui->t_photos->rowCount();
     ui->t_photos->setRowCount(ui->t_photos->rowCount() + filenames.count());
     int isFirst = i;
@@ -278,12 +283,17 @@ void Batchcc::SaveImgWithChanges(ImgNode image, QString out_path){
 
 void Batchcc::onReset(){
     CC.clearOrder();
-    displayed_pic.Change(displayed_pic.filename(), filestr2pixmap(displayed_pic.filename()));
+    if (!CC.img_vec().empty()){
+        displayed_pic.Change(displayed_pic.filename(), filestr2pixmap(displayed_pic.filename()));
+        ui->ImgDisplay->setPixmap((QPixmap{filestr2pixmap(displayed_pic.filename())}).scaled({691,451}, Qt::KeepAspectRatio));
+    }
     centerticks();
-    ui->ImgDisplay->setPixmap((QPixmap{filestr2pixmap(displayed_pic.filename())}).scaled({691,451}, Qt::KeepAspectRatio));
 }
 
 void Batchcc::onPrev(){
+    if (CC.img_vec().empty()){
+        return;
+    }
     if (c_index == 0){
         onListItemClicked(CC.img_vec().size() - 1, 0);
     }
@@ -293,10 +303,44 @@ void Batchcc::onPrev(){
 }
 
 void Batchcc::onNext(){
+    if (CC.img_vec().empty()){
+        return;
+    }
     if (c_index == CC.img_vec().size() - 1){
         onListItemClicked(0, 0);
     }
     else{
         onListItemClicked(c_index + 1, 0);
     }
+}
+
+void Batchcc::onDelete(){
+    if (CC.img_vec().empty()){
+        return;
+    }
+    CC.img_vec().erase(CC.img_vec().begin() + c_index);
+    if (CC.img_vec().empty()){
+        PrepareEmpty();
+    }
+    else if (c_index == CC.img_vec().size()){
+        onListItemClicked(c_index - 1, 0);
+        delete ui->t_photos->item(ui->t_photos->rowCount(), 0);
+        ui->t_photos->setRowCount(ui->t_photos->rowCount()-1);
+        return;
+    }
+    else{
+        onListItemClicked(c_index, 0);
+    }
+    for (int i = c_index; i < ui->t_photos->rowCount()-1; i++){
+        delete ui->t_photos->item(i, 0);
+        ui->t_photos->setItem(i, 0, new QTableWidgetItem{ui->t_photos->item(i+1,0)->text()});
+        ui->t_photos->item(i, 0)->setIcon(ui->t_photos->item(i+1,0)->icon());
+    }
+    delete ui->t_photos->item(ui->t_photos->rowCount(), 0);
+    ui->t_photos->setRowCount(ui->t_photos->rowCount()-1);
+}
+
+void Batchcc::PrepareEmpty(){
+    ui->ImgDisplay->setPixmap(QPixmap{":/img/black.png"});
+    displayed_pic.Change(0);
 }

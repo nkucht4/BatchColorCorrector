@@ -29,6 +29,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         colorcorrector.h colorcorrector.cpp
         imgnode.h imgnode.cpp
         currentpicture.h currentpicture.cpp
+        resources.qrc
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET ImgVidTools APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

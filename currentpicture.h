@@ -22,6 +22,7 @@ public:
     CurrentPicture(QString fname, QPixmap pmap);
 
     void Change(QString filenane, QPixmap map);
+    void Change(int);
 
     QString filename(){ return filename_;   }
     cv::Mat& mat(){  return mat_;    }

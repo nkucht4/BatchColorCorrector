@@ -26,6 +26,7 @@ public:
     void displayNewPhoto();
     QString getOutputPath();
     void SaveImgWithChanges(ImgNode img, QString out_path);
+    void PrepareEmpty();
 
 public slots:
     void onOpenFile();
@@ -50,6 +51,7 @@ public slots:
     void onReset();
     void onPrev();
     void onNext();
+    void onDelete();
 private:
     Ui::Batchcc *ui;
     ColorCorrector CC;
