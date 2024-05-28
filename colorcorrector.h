@@ -30,6 +30,7 @@ public:
     Properties& props(){ return props_;  }
     std::vector <ImgNode>& img_vec(){   return images_; }
     void clearOrder(){  order_.clear(); }
+    void eraseImg(int index){   images_.erase(images_.begin() + index);   }
 };
 
 #endif // COLORCORRECTOR_H

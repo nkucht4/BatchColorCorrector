@@ -1,7 +1,6 @@
 #include "batchcc.h"
 #include "ui_batchcc.h"
 #include "QFileDialog"
-#include <iostream>
 
 Batchcc::Batchcc(QWidget *parent)
     : QMainWindow(parent)
@@ -14,6 +13,8 @@ Batchcc::Batchcc(QWidget *parent)
     connect(ui->t_photos, &QTableWidget::cellClicked, this, &Batchcc::onListItemClicked);
     connect(ui->pb_save, &QPushButton::pressed, this, &Batchcc::onSaveFiles);
     connect(ui->pb_reset, &QPushButton::pressed, this, &Batchcc::onReset);
+    connect(ui->pB_prev, &QPushButton::pressed, this, &Batchcc::onPrev);
+    connect(ui->pB_next, &QPushButton::pressed, this, &Batchcc::onNext);
 
     connect(ui->slid_r, &QSlider::sliderReleased, this, &Batchcc::onRValChanged);
     connect(ui->slid_g, &QSlider::sliderReleased, this, &Batchcc::onGValChanged);
@@ -41,10 +42,14 @@ void Batchcc::onOpenFile(){
     QStringList filenames = QFileDialog::getOpenFileNames(this, tr("Pick image(s) to edit"), "C:\\", tr("Images (*.png *.xpm *.jpg)"));
     int i = ui->t_photos->rowCount();
     ui->t_photos->setRowCount(ui->t_photos->rowCount() + filenames.count());
+    int isFirst = i;
     for (const auto &file : filenames){
         CC.push_back({file});
         addNewItem(file, i);
         i++;
+    }
+    if (isFirst == 0){
+        onListItemClicked(0, 0);
     }
 }
 
@@ -69,6 +74,7 @@ QString Batchcc::getRawFilename(QString path){
 
 void Batchcc::onListItemClicked(int index, int col){
     displayed_pic.Change(CC.filename_at(index),ui->ImgDisplay->pixmap());
+    c_index = index;
     if (CC.orderVec().empty()){
         ui->ImgDisplay->setPixmap((QPixmap{filestr2pixmap(CC.filename_at(index))}).scaled({691,451}, Qt::KeepAspectRatio));
     }
@@ -275,4 +281,22 @@ void Batchcc::onReset(){
     displayed_pic.Change(displayed_pic.filename(), filestr2pixmap(displayed_pic.filename()));
     centerticks();
     ui->ImgDisplay->setPixmap((QPixmap{filestr2pixmap(displayed_pic.filename())}).scaled({691,451}, Qt::KeepAspectRatio));
+}
+
+void Batchcc::onPrev(){
+    if (c_index == 0){
+        onListItemClicked(CC.img_vec().size() - 1, 0);
+    }
+    else{
+        onListItemClicked(c_index - 1, 0);
+    }
+}
+
+void Batchcc::onNext(){
+    if (c_index == CC.img_vec().size() - 1){
+        onListItemClicked(0, 0);
+    }
+    else{
+        onListItemClicked(c_index + 1, 0);
+    }
 }

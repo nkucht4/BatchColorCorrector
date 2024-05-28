@@ -48,11 +48,13 @@ public slots:
 
     void onSaveFiles();
     void onReset();
-
+    void onPrev();
+    void onNext();
 private:
     Ui::Batchcc *ui;
     ColorCorrector CC;
     CurrentPicture displayed_pic;
+    int c_index;
 };
 
 #endif // BATCHCC_H
