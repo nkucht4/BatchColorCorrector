@@ -233,6 +233,9 @@ void Batchcc::displayNewPhoto(){
 
 void Batchcc::onSaveFiles(){
     QString opath {getOutputPath()};
+    if (opath.isEmpty()){
+        return;
+    }
     for (auto img : CC.img_vec()){
         SaveImgWithChanges(img, opath);
     }
@@ -277,7 +280,7 @@ void Batchcc::SaveImgWithChanges(ImgNode image, QString out_path){
             break;
         }
     }
-    out_path = out_path + '/' + getRawFilename(image.filename());
+    out_path = out_path + "/BCC" + getRawFilename(image.filename());
     cv::imwrite(out_path.toStdString(), processed_picture.mat());
 }
 
