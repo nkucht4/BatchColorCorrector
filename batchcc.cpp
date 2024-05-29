@@ -2,11 +2,14 @@
 #include "ui_batchcc.h"
 #include "QFileDialog"
 
+#define OPENDIR "C:/"
+
 Batchcc::Batchcc(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Batchcc)
 {
     ui->setupUi(this);
+    setWindowTitle("Batch Color Corrector");
     centerticks();
     PrepareEmpty();
 
@@ -41,7 +44,7 @@ Batchcc::~Batchcc()
 }
 
 void Batchcc::onOpenFile(){
-    QStringList filenames = QFileDialog::getOpenFileNames(this, tr("Pick image(s) to edit"), "C:\\", tr("Images (*.png *.xpm *.jpg)"));
+    QStringList filenames = QFileDialog::getOpenFileNames(this, tr("Pick image(s) to edit"), OPENDIR, tr("Images (*.png *.xpm *.jpg)"));
     if (filenames.isEmpty()){
         return;
     }
@@ -243,7 +246,7 @@ void Batchcc::onSaveFiles(){
 }
 
 QString Batchcc::getOutputPath(){
-    return QFileDialog::getExistingDirectory(this, tr("Choose the output directory"), "C:\\");
+    return QFileDialog::getExistingDirectory(this, tr("Choose the output directory"), OPENDIR);
 }
 
 void Batchcc::SaveImgWithChanges(ImgNode image, QString out_path){
@@ -344,6 +347,6 @@ void Batchcc::onDelete(){
 }
 
 void Batchcc::PrepareEmpty(){
-    ui->ImgDisplay->setPixmap(QPixmap{":/img/black.png"});
+    ui->ImgDisplay->setPixmap(QPixmap{":/img/img/black.png"});
     displayed_pic.Change(0);
 }

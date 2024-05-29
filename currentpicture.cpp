@@ -1,7 +1,6 @@
 #include "currentpicture.h"
 #include <opencv2/core.hpp>
-#include <stdlib.h>
-#include<iostream>
+#include <QFile>
 #include <opencv2/imgproc.hpp>
 
 using namespace cv;
@@ -18,8 +17,13 @@ void CurrentPicture::Change(QString filename, QPixmap map){
 
 void CurrentPicture::Change(int a){
     filename_ = "0";
-    mat_.setTo(cv::Scalar(250,250,250));
-    mat_ = imread("C:/Users/kucht/Documents/Programowanie/Studia/QT/Batch Color Corrector/img/black.png", IMREAD_COLOR);
+    QFile b{":/img/img/black.png"};
+    if(b.open(QIODevice::ReadOnly))
+    {
+        std::vector<uchar> buff(b.size());
+        b.read((char*)buff.data(), b.size());
+        mat_ = imdecode(buff, IMREAD_COLOR);
+    }
 }
 
 void CurrentPicture::changeRGB(int val, int channel){
